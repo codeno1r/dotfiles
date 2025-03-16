@@ -1,7 +1,9 @@
- #!/usr/bin/env bash
+#!/usr/bin/env bash
 
- eval "$(starship init bash)"
+export LIBVIRT_DEFAULT_URI="qemu:///session"
 
- fastfetch
+eval "$(starship init bash)"
 
- alias ll="ls -la --color=auto"
+fastfetch
+
+alias ll="ls -la --color=auto"
