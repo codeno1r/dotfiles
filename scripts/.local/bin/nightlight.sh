@@ -1,7 +1,7 @@
 #!/bin/bash
 
 STATE_FILE="/tmp/nightlight_state"
-MONITOR="eDP-1"
+MONITOR="eDP"
 
 # Check if state file exists; if not, create it with default "off"
 if [ ! -f "$STATE_FILE" ]; then
