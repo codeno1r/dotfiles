@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Read the first line of /proc/stat
-read cpu user nice system idle iowait irq softirq steal guest guest_nice < /proc/stat
+read cpu user nice system idle iowait irq softirq steal guest guest_nice </proc/stat
 
 # Calculate total and idle CPU time
 total=$((user + nice + system + idle + iowait + irq + softirq + steal))
@@ -14,5 +14,4 @@ cpu_usage=$(((100 * used + total - 1) / total))
 [ "$cpu_usage" -eq 0 ] && cpu_usage=1
 
 # Print output
-echo "${cpu_usage}%"
-
+echo "  ${cpu_usage}%"
