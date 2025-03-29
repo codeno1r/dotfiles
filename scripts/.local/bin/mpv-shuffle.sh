@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mpv --volume=20 --loop-playlist=inf $1 --shuffle
+mpv --volume=50 --loop-playlist=inf $1 --shuffle
