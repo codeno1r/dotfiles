@@ -3,14 +3,14 @@
 
 /* appearance */
 static const unsigned int borderpx = 2; /* border pixel of windows */
-static const unsigned int gappx = 5;    /* gaps between windows */
-static const unsigned int snap = 5;     /* snap pixel */
+static const unsigned int gappx = 10;   /* gaps between windows */
+static const unsigned int snap = 10;    /* snap pixel */
 static const int showbar = 1;           /* 0 means no bar */
 static const int topbar = 1;            /* 0 means bottom bar */
 static const char *fonts[] = {"JetBrainsMono Nerd Font:style=Bold:size=14",
                               "Noto Color Emoji:size=14",
                               "NotoSans Nerd Font:size=14"};
-static const char dmenufont[] = "MesloLGS Nerd Font Mono:size=14";
+static const char dmenufont[] = "JetBrainsMono Nerd Font:style=Bold:size=14";
 static const char col_gray1[] = "#09090b";
 static const char col_gray2[] = "#1e2939";
 static const char col_gray3[] = "#52525c";
@@ -33,7 +33,7 @@ static const Rule rules[] = {
      *	WM_NAME(STRING) = title
      */
     /* class      instance    title       tags mask     isfloating   monitor */
-    {"Gimp", NULL, NULL, 0, 1, 0},
+    {"DeadByDaylight", NULL, NULL, 1, 0, 0},
     {"Code", NULL, NULL, 1 << 1, 0, 0},
     {"Google-chrome", NULL, NULL, 1 << 2, 0, 0},
     {"Roam", NULL, NULL, 1 << 3, 0, 0},
@@ -41,6 +41,7 @@ static const Rule rules[] = {
     {"WebWork Tracker", NULL, NULL, 1 << 8, 1, 0},
     {"mpv", NULL, NULL, 1 << 6, 0, 0},
     {"Virt-manager", NULL, NULL, 1 << 7, 0, 0},
+    {"steam", NULL, NULL, 1 << 7, 0, 0},
 
     {"firefox", NULL, NULL, 1 << 2, 0, 1},
     {"WhatSie", NULL, NULL, 1 << 3, 0, 1},
@@ -84,7 +85,7 @@ static const char *dmenucmd[] = {
     "dmenu_run", "-m",      dmenumon, "-fn",    dmenufont, "-nb",     col_gray1,
     "-nf",       col_gray3, "-sb",    col_cyan, "-sf",     col_gray4, NULL};
 static const char *termcmd[] = {"st", NULL};
-static const char *filemgrcmd[] = {"nautilus", NULL};
+static const char *filemgrcmd[] = {"thunar", NULL};
 
 static const Key keys[] = {
     /* modifier                     key        function        argument */
@@ -123,13 +124,13 @@ static const Key keys[] = {
     TAGKEYS(XK_1, 0) TAGKEYS(XK_2, 1) TAGKEYS(XK_3, 2) TAGKEYS(XK_4, 3)
         TAGKEYS(XK_5, 4) TAGKEYS(XK_6, 5) TAGKEYS(XK_7, 6) TAGKEYS(XK_8, 7)
             TAGKEYS(XK_9, 8){MODKEY | ShiftMask, XK_q, quit, {0}},
-    {0, XF86XK_AudioMute, spawn,
+    {MODKEY | ShiftMask, XK_9, spawn,
      SHCMD("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; kill -44 $(pidof "
            "dwmblocks)")},
-    {0, XF86XK_AudioRaiseVolume, spawn,
+    {MODKEY | ShiftMask, XK_equal, spawn,
      SHCMD("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+; kill -44 $(pidof "
            "dwmblocks)")},
-    {0, XF86XK_AudioLowerVolume, spawn,
+    {MODKEY | ShiftMask, XK_minus, spawn,
      SHCMD("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-; kill -44 $(pidof "
            "dwmblocks)")},
     {0, XF86XK_MonBrightnessUp, spawn,
