@@ -21,15 +21,15 @@
     "hyprland/window"
   ],
   "modules-right": [
-    "temperature",
     "battery",
     "battery#bat2",
-    "pulseaudio",
     "cpu",
     "memory",
+    "pulseaudio",
     "network",
     "clock",
     "tray"
+    // "temperature",
     // "custom/power"
     // "mpd",
     // "idle_inhibitor",
@@ -50,7 +50,7 @@
       "7": [],
       "8": [],
       "9": [],
-      "0": []
+      "10": []
     },
     "disable-scroll": true,
     "all-outputs": true,
@@ -67,7 +67,7 @@
       "7": "",
       "8": "",
       "9": "",
-      "0": ""
+      "10": ""
       // "urgent": "",
       // "focused": "",
       // "default": ""
@@ -134,8 +134,9 @@
   },
   "clock": {
     "timezone": "Asia/Manila",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%Y-%m-%d}"
+    "format": "{:%a %x %I:%M %p}",
+    "tooltip-format": "<tt><big>{calendar}</big></tt>"
+    // "format-alt": "{:%Y-%m-%d}"
   },
   "cpu": {
     "format": "{usage}% ",
