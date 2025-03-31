@@ -113,6 +113,7 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
+#custom-vpn,
 #mpd {
     padding: 0 10px;
     background-color: @zinc-950;
