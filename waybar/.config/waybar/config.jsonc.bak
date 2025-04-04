@@ -1,13 +1,11 @@
+// -*- mode: jsonc -*-
 {
-  "layer": "top", // Waybar at top layer
-  "position": "top", // Waybar position (top|bottom|left|right)
-  "output": [
-    "HDMI-A-1"
-  ],
+  // "layer": "top", // Waybar at top layer
+  // "position": "bottom", // Waybar position (top|bottom|left|right)
   "height": 30, // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width
   // "spacing": 4, // Gaps between modules (4px)
-  "spacing": 5, // Gaps between modules (4px)
+  "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
   "margin-top": 5,
   "margin-left": 10,
@@ -15,77 +13,66 @@
   "margin-right": 10,
   "modules-left": [
     "hyprland/workspaces",
-    "hyprland/window",
+    "tray",
+    "custom/vpn",
     "hyprland/mode",
     "hyprland/scratchpad",
     "custom/media"
   ],
   "modules-center": [
-    "clock"
+    "hyprland/window"
   ],
   "modules-right": [
+    "temperature",
+    "battery",
+    "battery#bat2",
     "cpu",
     "memory",
-    "battery",
-    "custom/vpn",
-    "backlight",
     "pulseaudio",
-    "tray"
-    // "battery#bat2",
-    // "network",
-    // "temperature",
+    "network",
+    "clock"
     // "custom/power"
     // "mpd",
     // "idle_inhibitor",
     // "power-profiles-daemon",
+    // "backlight",
     // "keyboard-state",
     // "sway/language",
   ],
   // Modules configuration
-  "custom/vpn": {
-    "format": "{}",
-    "return-type": "json",
-    "exec": "~/dotfiles/scripts/.local/bin/vpn.sh",
-    "tooltip": false,
-    "restart-interval": 5
-  },
   "hyprland/workspaces": {
-    // "persistent-workspaces": {
-    //   "1": [],
-    //   "2": [],
-    //   "3": [],
-    //   "4": [],
-    //   "5": [],
-    //   "6": [],
-    //   "7": [],
-    //   "8": [],
-    //   "9": [],
-    //   "10": []
-    // },
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": [],
+      "7": [],
+      "8": [],
+      "9": [],
+      "10": []
+    },
     "disable-scroll": true,
-    "all-outputs": false,
+    "all-outputs": true,
     "warp-on-scroll": true,
     // "format": "{name}: {icon}",
-    "format": "{icon} {name}",
+    "format": "{name}",
     "format-icons": {
-      "1": "󰣇",
-      "2": "",
-      "3": "󰊯",
-      "4": "",
-      "5": "󰻞",
-      "6": "󰅼",
-      "7": "󰻏",
-      "8": "󰨡",
-      "9": "󱃑",
-      "10": ""
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": "",
+      "10": ""
       // "urgent": "",
       // "focused": "",
       // "default": ""
     }
-  },
-  "hyprland/window": {
-    "format": "{class}",
-    "separate-outputs": true
   },
   "keyboard-state": {
     "numlock": true,
@@ -143,7 +130,7 @@
     }
   },
   "tray": {
-    "icon-size": 16,
+    // "icon-size": 21,
     "spacing": 10
   },
   "clock": {
@@ -153,11 +140,11 @@
     // "format-alt": "{:%Y-%m-%d}"
   },
   "cpu": {
-    "format": " {usage}%",
+    "format": "{usage}% ",
     "tooltip": false
   },
   "memory": {
-    "format": " {}%"
+    "format": "{}% "
   },
   "temperature": {
     // "thermal-zone": 2,
@@ -173,8 +160,7 @@
   },
   "backlight": {
     // "device": "acpi_video1",
-    // "format": "{percent}% {icon}",
-    "format": "{icon} {percent}%",
+    "format": "{percent}% {icon}",
     "format-icons": [
       "",
       "",
@@ -193,11 +179,11 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "{icon} {capacity}%",
-    "format-full": "{icon} {capacity}%",
-    "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
-    "format-alt": "{icon} {time}",
+    "format": "{capacity}% {icon}",
+    "format-full": "{capacity}% {icon}",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "format-alt": "{time} {icon}",
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
     "format-icons": [
@@ -233,16 +219,11 @@
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    // "format": "{icon} {volume}% {format_source}",
-    "format": "{icon} {volume}%",
-    // "format-bluetooth": "{icon} {volume}% {format_source}",
-    "format-bluetooth": "{icon} {volume}%",
-    // "format-bluetooth-muted": "{icon}   {format_source}",
-    "format-bluetooth-muted": "  {icon} ",
-    // "format-muted": "  {format_source}",
-    "format-muted": " ",
-    // "format-source": " {volume}%",
-    "format-source": "",
+    "format": "{volume}% {icon} {format_source}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": "{volume}% ",
     "format-source-muted": "",
     "format-icons": {
       "headphone": "",
@@ -252,12 +233,9 @@
       "portable": "",
       "car": "",
       "default": [
-        // "",
-        // "",
-        // ""
-        // "",
-        // "",
-        ""
+        "",
+        "",
+        ""
       ]
     },
     "on-click": "pavucontrol"
@@ -284,6 +262,12 @@
       "reboot": "reboot",
       "suspend": "systemctl suspend",
       "hibernate": "systemctl hibernate"
+    },
+    "custom/vpn": {
+      "exec": "/home/codenoir/dotfiles/waybar/.config/waybar/vpn.sh | jq",
+      "tooltip-format": "{icon}",
+      "tooltip": true,
+      "interval": 5
     }
   }
 }
