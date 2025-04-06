@@ -1,8 +1,11 @@
+nm-applet &
+blueman-applet &
+noisetorch -i &
 dwmblocks &
-xrandr --output eDP-1 --mode 1920x1080  --output HDMI-1 --mode 1920x1080 --above eDP-1 &
+# xrandr --output eDP-1 --mode 1920x1080  --output HDMI-1 --mode 1920x1080 --above eDP-1 &
+xrandr --output HDMI-0 --mode 1920x1080 &
 picom --config .config/picom/picom.conf &
 feh --bg-scale .config/dwm/isolated-house.jpg &
-noisetorch -i &
 dunst &
 
 # eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh,gpg)

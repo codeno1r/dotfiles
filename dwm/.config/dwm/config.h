@@ -5,11 +5,23 @@
 static const unsigned int borderpx = 2; /* border pixel of windows */
 static const unsigned int gappx = 10;   /* gaps between windows */
 static const unsigned int snap = 10;    /* snap pixel */
-static const int showbar = 1;           /* 0 means no bar */
-static const int topbar = 1;            /* 0 means bottom bar */
+static const unsigned int systraypinning =
+    0; /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor
+          X */
+static const unsigned int systrayonleft =
+    0; /* 0: systray in the right corner, >0: systray on left of status text */
+static const unsigned int systrayspacing = 2; /* systray spacing */
+static const int systraypinningfailfirst =
+    1; /* 1: if pinning fails, display systray on the first monitor, False:
+          display systray on the last monitor*/
+static const int showsystray = 0; /* 0 means no systray */
+static const int showbar = 1;     /* 0 means no bar */
+static const int topbar = 1;      /* 0 means bottom bar */
+static const int vertpad = 0;     /* vertical padding of bar */
+static const int sidepad = 0;     /* horizontal padding of bar */
 static const char *fonts[] = {"JetBrainsMono Nerd Font:style=Bold:size=14",
-                              "Noto Color Emoji:size=14",
-                              "NotoSans Nerd Font:size=14"};
+                              "Noto Color Emoji:size=12",
+                              "NotoSans Nerd Font:size=12"};
 static const char dmenufont[] = "JetBrainsMono Nerd Font:style=Bold:size=14";
 static const char col_gray1[] = "#09090b";
 static const char col_gray2[] = "#1e2939";
@@ -24,8 +36,7 @@ static const char *colors[][3] = {
 };
 
 /* tagging */
-static const char *tags[] = {"󰣇", "󰨞", "󰊯", "", "󰻞",
-                             "󰅼", "󰻏", "󰨡", "󱃑"};
+static const char *tags[] = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
 
 static const Rule rules[] = {
     /* xprop(1):
@@ -33,7 +44,7 @@ static const Rule rules[] = {
      *	WM_NAME(STRING) = title
      */
     /* class      instance    title       tags mask     isfloating   monitor */
-    {"DeadByDaylight", NULL, NULL, 1, 0, 0},
+    {"steam_app_381210", NULL, NULL, 0, 1, 0},
     {"Code", NULL, NULL, 1 << 1, 0, 0},
     {"Google-chrome", NULL, NULL, 1 << 2, 0, 0},
     {"Roam", NULL, NULL, 1 << 3, 0, 0},
@@ -41,6 +52,7 @@ static const Rule rules[] = {
     {"WebWork Tracker", NULL, NULL, 1 << 8, 1, 0},
     {"mpv", NULL, NULL, 1 << 6, 0, 0},
     {"Virt-manager", NULL, NULL, 1 << 7, 0, 0},
+    {"Virt-viewer", NULL, NULL, 1 << 7, 0, 0},
     {"steam", NULL, NULL, 1 << 7, 0, 0},
 
     {"firefox", NULL, NULL, 1 << 2, 0, 1},
@@ -78,14 +90,28 @@ static const Layout layouts[] = {
     .v = (const char *[]) { "/bin/sh", "-c", cmd, NULL }                       \
   }
 
+#define STATUSBAR "dwmblocks"
+
 /* commands */
 static char dmenumon[2] =
     "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = {
-    "dmenu_run", "-m",      dmenumon, "-fn",    dmenufont, "-nb",     col_gray1,
-    "-nf",       col_gray3, "-sb",    col_cyan, "-sf",     col_gray4, NULL};
+// static const char *dmenucmd[] = {
+//     "dmenu_run", "-m",      dmenumon, "-fn",    dmenufont, "-nb", col_gray1,
+//     "-nf",       col_gray3, "-sb",    col_cyan, "-sf",     col_gray4, NULL};
+static const char *dmenucmd[] = {"dmenu_run", "-c", NULL};
 static const char *termcmd[] = {"st", NULL};
 static const char *filemgrcmd[] = {"thunar", NULL};
+// static const char *keepassxccmd[] = {"keepassxc", NULL};
+// static const char *bluemanApplet[] = {"blueman-applet", NULL};
+// static const char *nmApplet[] = {"nm-applet", NULL};
+// static const char *noisetorch[] = {"noisetorch", "-i", NULL};
+
+Autostarttag autostarttaglist[] = {
+    // {.cmd = noisetorch, .tags = 1 << 0},
+    // {.cmd = nmApplet, .tags = 1 << 0},
+    // {.cmd = bluemanApplet, .tags = 1 << 0},
+    {.cmd = NULL, .tags = 0},
+};
 
 static const Key keys[] = {
     /* modifier                     key        function        argument */
@@ -119,18 +145,18 @@ static const Key keys[] = {
     {MODKEY | ShiftMask, XK_equal, setgaps, {.i = 0}},
     {MODKEY, XK_F7, spawn, SHCMD("kill -49 $(pidof dwmblocks); nightlight.sh")},
     {MODKEY | ShiftMask, XK_n, spawn, SHCMD("nlchangestatus.sh")},
-    {MODKEY | ShiftMask, XK_s, spawn, SHCMD("flameshotgui.sh")},
+    {MODKEY | ShiftMask, XK_s, spawn, SHCMD("flameshotgui-dwm.sh")},
     {MODKEY | ShiftMask, XK_m, spawn, SHCMD("win10.sh")},
     TAGKEYS(XK_1, 0) TAGKEYS(XK_2, 1) TAGKEYS(XK_3, 2) TAGKEYS(XK_4, 3)
         TAGKEYS(XK_5, 4) TAGKEYS(XK_6, 5) TAGKEYS(XK_7, 6) TAGKEYS(XK_8, 7)
             TAGKEYS(XK_9, 8){MODKEY | ShiftMask, XK_q, quit, {0}},
-    {MODKEY | ShiftMask, XK_9, spawn,
+    {MODKEY | ShiftMask, XK_F10, spawn,
      SHCMD("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; kill -44 $(pidof "
            "dwmblocks)")},
-    {MODKEY | ShiftMask, XK_equal, spawn,
+    {MODKEY | ShiftMask, XK_F12, spawn,
      SHCMD("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+; kill -44 $(pidof "
            "dwmblocks)")},
-    {MODKEY | ShiftMask, XK_minus, spawn,
+    {MODKEY | ShiftMask, XK_F11, spawn,
      SHCMD("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-; kill -44 $(pidof "
            "dwmblocks)")},
     {0, XF86XK_MonBrightnessUp, spawn,
@@ -147,7 +173,9 @@ static const Button buttons[] = {
     {ClkLtSymbol, 0, Button1, setlayout, {0}},
     {ClkLtSymbol, 0, Button3, setlayout, {.v = &layouts[2]}},
     {ClkWinTitle, 0, Button2, zoom, {0}},
-    {ClkStatusText, 0, Button2, spawn, {.v = termcmd}},
+    {ClkStatusText, 0, Button1, sigstatusbar, {.i = 1}},
+    {ClkStatusText, 0, Button2, sigstatusbar, {.i = 2}},
+    {ClkStatusText, 0, Button3, sigstatusbar, {.i = 3}},
     {ClkClientWin, MODKEY, Button1, movemouse, {0}},
     {ClkClientWin, MODKEY, Button2, togglefloating, {0}},
     {ClkClientWin, MODKEY, Button3, resizemouse, {0}},
