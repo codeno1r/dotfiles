@@ -44,7 +44,7 @@ static const Rule rules[] = {
      *	WM_NAME(STRING) = title
      */
     /* class      instance    title       tags mask     isfloating   monitor */
-    {"steam_app_381210", NULL, NULL, 0, 1, 0},
+    {"steam_app_381210", NULL, NULL, 1, 0, 0},
     {"Code", NULL, NULL, 1 << 1, 0, 0},
     {"Google-chrome", NULL, NULL, 1 << 2, 0, 0},
     {"Roam", NULL, NULL, 1 << 3, 0, 0},
