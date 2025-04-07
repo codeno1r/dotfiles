@@ -29,10 +29,19 @@ static const char col_gray3[] = "#52525c";
 static const char col_gray4[] = "#99a1af";
 static const char col_gray5[] = "#e4e4e7";
 static const char col_cyan[] = "#0f172b";
+
+// 🌿 Elegant & Relaxing DWM Color Scheme
+// static const char dark_slate[] = "#2E3440";
+static const char dark_slate[] = "#1B1E25";
+static const char snow_white[] = "#D8DEE9";
+static const char muted_border[] = "#4C566A";
+static const char calm_cyan[] = "#88C0D0";
+static const char subtle_blue[] = "#81A1C1";
+
 static const char *colors[][3] = {
     /*               fg         bg         border   */
-    [SchemeNorm] = {col_gray4, col_gray1, col_gray2},
-    [SchemeSel] = {col_gray5, col_cyan, col_gray5},
+    [SchemeNorm] = {snow_white, dark_slate, muted_border},
+    [SchemeSel] = {dark_slate, calm_cyan, subtle_blue},
 };
 
 /* tagging */
@@ -47,6 +56,7 @@ static const Rule rules[] = {
     {"steam_app_381210", NULL, NULL, 1, 0, 0},
     {"Code", NULL, NULL, 1 << 1, 0, 0},
     {"Google-chrome", NULL, NULL, 1 << 2, 0, 0},
+    {"Brave-browser", NULL, NULL, 1 << 2, 0, 0},
     {"Roam", NULL, NULL, 1 << 3, 0, 0},
     {"zoom", NULL, NULL, 1 << 5, 0, 0},
     {"WebWork Tracker", NULL, NULL, 1 << 8, 1, 0},
@@ -174,6 +184,7 @@ static const Button buttons[] = {
     {ClkLtSymbol, 0, Button3, setlayout, {.v = &layouts[2]}},
     {ClkWinTitle, 0, Button2, zoom, {0}},
     {ClkStatusText, 0, Button1, sigstatusbar, {.i = 1}},
+    {ClkStatusText, 0, Button1, sigstatusbar, {.i = 10}},
     {ClkStatusText, 0, Button2, sigstatusbar, {.i = 2}},
     {ClkStatusText, 0, Button3, sigstatusbar, {.i = 3}},
     {ClkClientWin, MODKEY, Button1, movemouse, {0}},

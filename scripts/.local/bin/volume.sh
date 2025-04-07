@@ -2,6 +2,8 @@
 
 # Prints the current volume or  if muted.
 
+export PATH="/usr/local/bin:/usr/bin:/bin"
+
 case $BLOCK_BUTTON in
 # 1) setsid -w -f "$TERMINAL" -e pulsemixer; pkill -RTMIN+10 "${STATUSBAR:-dwmblocks}" ;;
 1)
