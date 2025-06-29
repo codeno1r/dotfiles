@@ -1,0 +1,8 @@
+[default-routes]
+alsa_card.pci-0000_01_00.1:output:hdmi-output-0={"iec958Codecs":["PCM"], "mute":false, "channelVolumes":[0.063997, 0.063997], "latencyOffsetNsec":0, "channelMap":["FL", "FR"]}
+alsa_card.pci-0000_01_00.1:profile:output:hdmi-stereo=["hdmi-output-0"]
+alsa_card.usb-C-Media_Electronics_Inc._USB_Advanced_Audio_Device-00:output:analog-output-speaker={"mute":false, "channelVolumes":[0.125000, 0.125000], "latencyOffsetNsec":0, "channelMap":["FL", "FR"]}
+alsa_card.usb-C-Media_Electronics_Inc._USB_Advanced_Audio_Device-00:profile:output:analog-stereo+input:analog-stereo=["analog-output-speaker"]
+bluez_card.25_D1_EB_01_84_9D:output:headset-output={"mute":false, "channelVolumes":[0.418562, 0.418562], "latencyOffsetNsec":0, "channelMap":["FL", "FR"]}
+bluez_card.25_D1_EB_01_84_9D:profile:a2dp-sink=["headset-output"]
+bluez_card.25_D1_EB_01_84_9D:profile:off=["headset-output"]
