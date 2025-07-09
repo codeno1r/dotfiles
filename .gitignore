@@ -1,3 +1,8 @@
 # Ignore all runtime state files
 scripts/.local/state/**
 scripts/.local/share/**
+dwm/.config/dwm/*.jpg
+dwm/.config/dwm/*.png
+scripts/.local/state/
+scripts/.local/share/
+
