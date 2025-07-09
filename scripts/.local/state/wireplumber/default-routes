@@ -1,8 +1,21 @@
 [default-routes]
-alsa_card.pci-0000_01_00.1:output:hdmi-output-0={"iec958Codecs":["PCM"], "mute":false, "channelVolumes":[0.063997, 0.063997], "latencyOffsetNsec":0, "channelMap":["FL", "FR"]}
+alsa_card.pci-0000_01_00.1:output:hdmi-output-0={"mute":false, "channelMap":["FL", "FR"], "channelVolumes":[1.000000, 1.000000], "iec958Codecs":["PCM"], "latencyOffsetNsec":0}
+alsa_card.pci-0000_01_00.1:profile:off=["hdmi-output-0"]
 alsa_card.pci-0000_01_00.1:profile:output:hdmi-stereo=["hdmi-output-0"]
-alsa_card.usb-C-Media_Electronics_Inc._USB_Advanced_Audio_Device-00:output:analog-output-speaker={"mute":false, "channelVolumes":[0.125000, 0.125000], "latencyOffsetNsec":0, "channelMap":["FL", "FR"]}
-alsa_card.usb-C-Media_Electronics_Inc._USB_Advanced_Audio_Device-00:profile:output:analog-stereo+input:analog-stereo=["analog-output-speaker"]
-bluez_card.25_D1_EB_01_84_9D:output:headset-output={"mute":false, "channelVolumes":[0.418562, 0.418562], "latencyOffsetNsec":0, "channelMap":["FL", "FR"]}
+alsa_card.usb-C-Media_Electronics_Inc._USB_Advanced_Audio_Device-00:input:analog-input-mic={"mute":false, "channelMap":["FL", "FR"], "channelVolumes":[0.019952, 0.019952], "latencyOffsetNsec":0}
+alsa_card.usb-C-Media_Electronics_Inc._USB_Advanced_Audio_Device-00:output:analog-output-speaker={"mute":false, "channelMap":["FL", "FR"], "channelVolumes":[0.125000, 0.125000], "latencyOffsetNsec":0}
+alsa_card.usb-C-Media_Electronics_Inc._USB_Advanced_Audio_Device-00:profile:input:analog-stereo=["analog-input-mic"]
+alsa_card.usb-C-Media_Electronics_Inc._USB_Advanced_Audio_Device-00:profile:output:analog-stereo+input:analog-stereo=["analog-output-speaker", "analog-input-mic"]
+alsa_card.usb-C-Media_Electronics_Inc._USB_Advanced_Audio_Device-00:profile:output:analog-stereo+input:iec958-stereo=["analog-output-speaker"]
+alsa_card.usb-Plantronics_Poly_Blackwire_3320_Series_BD6FCB5AC1D84571908BCEBF198275F9-00:input:analog-input-headset-mic={"mute":false, "channelMap":["MONO"], "channelVolumes":[0.141878], "latencyOffsetNsec":0}
+alsa_card.usb-Plantronics_Poly_Blackwire_3320_Series_BD6FCB5AC1D84571908BCEBF198275F9-00:output:analog-output-headphones={"mute":false, "channelMap":["FL", "FR"], "channelVolumes":[0.421901, 0.421901], "latencyOffsetNsec":0}
+alsa_card.usb-Plantronics_Poly_Blackwire_3320_Series_BD6FCB5AC1D84571908BCEBF198275F9-00:profile:output:analog-stereo+input:mono-fallback=["analog-output-headphones", "analog-input-headset-mic"]
+bluez_card.25_D1_EB_01_84_9D:input:headset-input={"channelVolumes":[1.000000], "mute":false, "channelMap":["MONO"]}
+bluez_card.25_D1_EB_01_84_9D:output:headset-hf-output={"channelVolumes":[0.274625], "mute":false, "channelMap":["MONO"]}
+bluez_card.25_D1_EB_01_84_9D:output:headset-output={"channelVolumes":[0.614979, 0.614979], "mute":false, "channelMap":["FL", "FR"], "latencyOffsetNsec":0}
 bluez_card.25_D1_EB_01_84_9D:profile:a2dp-sink=["headset-output"]
+bluez_card.25_D1_EB_01_84_9D:profile:a2dp-sink-sbc=["headset-output", "headset-input"]
+bluez_card.25_D1_EB_01_84_9D:profile:a2dp-sink-sbc_xq=["headset-output", "headset-input"]
+bluez_card.25_D1_EB_01_84_9D:profile:headset-head-unit=["headset-input", "headset-hf-output"]
+bluez_card.25_D1_EB_01_84_9D:profile:headset-head-unit-cvsd=["headset-hf-output", "headset-input"]
 bluez_card.25_D1_EB_01_84_9D:profile:off=["headset-output"]

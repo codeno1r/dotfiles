@@ -15,9 +15,7 @@ static const int showbar = 1; /* 0 means no bar */
 static const int topbar = 1;  /* 0 means bottom bar */
 static const int vertpad = 0; /* vertical padding of bar */
 static const int sidepad = 0; /* horizontal padding of bar */
-static const char *fonts[] = {"JetBrainsMono Nerd Font:style=Bold:size=14",
-                              "Noto Color Emoji:size=12",
-                              "NotoSans Nerd Font:size=12"};
+static const char *fonts[] = {"JetBrainsMono Nerd Font:style=Bold:size=14"};
 static const char dmenufont[] = "JetBrainsMono Nerd Font:style=Bold:size=14";
 
 // 🌿 Elegant & Relaxing DWM Color Scheme
@@ -35,7 +33,7 @@ static const char *colors[][3] = {
 };
 
 /* tagging */
-static const char *tags[] = {"⛩", "2", "3", "4", "5", "6", "7", "8", "9"};
+static const char *tags[] = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
 
 static const Rule rules[] = {
     /* xprop(1):
@@ -182,7 +180,7 @@ static const Key keys[] = {
 
     // Custom Shortcuts
     {MODKEY | ShiftMask, XK_s, spawn,
-     SHCMD("flameshotgui-dwm.sh")}, // If you're using DWM
+     SHCMD("flameshotgui.sh")}, // If you're using DWM
     {MODKEY | ShiftMask, XK_b, spawn, SHCMD("WebWorkTracker.sh")},
     {MODKEY | ShiftMask, XK_n, spawn, SHCMD("nlchangestatus.sh")},
     {MODKEY | ShiftMask, XK_m, spawn, SHCMD("win10.sh")},
@@ -204,13 +202,13 @@ static const Key keys[] = {
     //  SHCMD("brightnessctl s 10%-; kill -48 $(pidof dwmblocks)")},
 
     // PC Custom Shortcut
-    {MODKEY | ShiftMask, XK_F10, spawn,
+    {MODKEY, XK_F10, spawn,
      SHCMD("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; kill -44 $(pidof "
            "dwmblocks)")},
-    {MODKEY | ShiftMask, XK_F12, spawn,
+    {MODKEY, XK_F12, spawn,
      SHCMD("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+; kill -44 $(pidof "
            "dwmblocks)")},
-    {MODKEY | ShiftMask, XK_F11, spawn,
+    {MODKEY, XK_F11, spawn,
      SHCMD("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-; kill -44 $(pidof "
            "dwmblocks)")},
 

@@ -1,1 +1,1 @@
-{"name":"taplo","metrics":{"completion_time":1751149464673,"start_time":1751149463113},"links":{"opt":{},"share":{},"bin":{"taplo":"taplo-linux-x86_64"}},"secondary_sources":[],"schema_version":"1.1","primary_source":{"id":"pkg:github/tamasfe/taplo@0.10.0","type":"registry+v1"}}
+{"name":"taplo","links":{"share":{},"opt":{},"bin":{"taplo":"taplo-linux-x86_64"}},"secondary_sources":[],"schema_version":"1.1","primary_source":{"type":"registry+v1","id":"pkg:github/tamasfe/taplo@0.10.0"},"metrics":{"start_time":1751161467386,"completion_time":1751161468941}}

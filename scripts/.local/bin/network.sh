@@ -7,7 +7,7 @@ if [ "$networkstatus" = "connected" ]; then
 
   if [ -n "$interface" ]; then
     ssid=$(nmcli -t -f SSID device wifi show "$interface" | sed 's/SSID://')
-    echo " $ssid"
+    echo "$ssid"
   else
     echo "ETH"
   fi

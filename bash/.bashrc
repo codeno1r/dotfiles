@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 export LIBVIRT_DEFAULT_URI="qemu:///session"
+export PATH="$HOME/depot_tools:$PATH"
 
 eval "$(starship init bash)"
 

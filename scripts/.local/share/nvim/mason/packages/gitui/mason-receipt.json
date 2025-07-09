@@ -1,1 +1,1 @@
-{"metrics":{"start_time":1751148681730,"completion_time":1751148683746},"primary_source":{"type":"registry+v1","id":"pkg:github/extrawurst/gitui@v0.27.0"},"schema_version":"1.1","links":{"share":{},"bin":{"gitui":"gitui"},"opt":{}},"secondary_sources":[],"name":"gitui"}
+{"metrics":{"start_time":1751161421396,"completion_time":1751161423407},"primary_source":{"id":"pkg:github/extrawurst/gitui@v0.27.0","type":"registry+v1"},"links":{"opt":{},"share":{},"bin":{"gitui":"gitui"}},"secondary_sources":[],"schema_version":"1.1","name":"gitui"}

@@ -1,1 +1,1 @@
-{"metrics":{"start_time":1751148681659,"completion_time":1751148683172},"primary_source":{"type":"registry+v1","id":"pkg:github/mvdan/sh@v3.11.0"},"schema_version":"1.1","links":{"share":{},"bin":{"shfmt":"shfmt_v3.11.0_linux_amd64"},"opt":{}},"secondary_sources":[],"name":"shfmt"}
+{"metrics":{"start_time":1751161419959,"completion_time":1751161421479},"primary_source":{"id":"pkg:github/mvdan/sh@v3.11.0","type":"registry+v1"},"links":{"opt":{},"share":{},"bin":{"shfmt":"shfmt_v3.11.0_linux_amd64"}},"secondary_sources":[],"schema_version":"1.1","name":"shfmt"}

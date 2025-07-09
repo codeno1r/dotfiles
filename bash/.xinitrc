@@ -6,7 +6,7 @@ dwmblocks &
 # xrandr --output DP-0 --mode 1920x1080 --rate 165 &
 xrandr --output DP-0 --mode 3440x1440 --rate 180 &
 picom --config .config/picom/picom.conf &
-feh --bg-fill .config/dwm/gardenOfWords.jpg &
+feh --bg-fill .config/dwm/moonlight.jpg &
 dunst &
 numlockx on &
 

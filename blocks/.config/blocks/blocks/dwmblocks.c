@@ -1,5 +1,6 @@
 #include <signal.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 #ifndef NO_X
@@ -30,7 +31,7 @@ void sighandler(int num);
 void getcmds(int time);
 void getsigcmds(unsigned int signal);
 void setupsignals();
-void sighandler(int signum);
+// void sighandler(int signum);
 int getstatus(char *str, char *last);
 void statusloop();
 void termhandler(int signum);

@@ -1,2 +1,7 @@
 [default-nodes]
-default.configured.audio.sink=alsa_output.pci-0000_01_00.1.hdmi-stereo
+default.configured.audio.sink=bluez_output.25_D1_EB_01_84_9D.1
+default.configured.audio.sink.0=alsa_output.usb-C-Media_Electronics_Inc._USB_Advanced_Audio_Device-00.analog-stereo
+default.configured.audio.sink.1=alsa_output.pci-0000_01_00.1.hdmi-stereo
+default.configured.audio.sink.2=alsa_output.usb-Plantronics_Poly_Blackwire_3320_Series_BD6FCB5AC1D84571908BCEBF198275F9-00.analog-stereo
+default.configured.audio.source=NoiseTorch Microphone for USB Advanced Audio Device
+default.configured.audio.source.0=NoiseTorch Microphone for Poly Blackwire 3320 Series

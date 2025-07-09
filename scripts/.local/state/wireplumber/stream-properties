@@ -1,5 +1,22 @@
 [stream-properties]
-Audio/Sink:node.name:auto_null={"mute":false, "volume":1.000000, "channelMap":["FL", "FR"], "channelVolumes":[1.000000, 1.000000]}
-Input/Audio:application.id:org.PulseAudio.pavucontrol={"volume":1.000000, "channelMap":["MONO"], "mute":false, "channelVolumes":[1.000000]}
-Output/Audio:application.name:Google\sChrome={"volume":1.000000, "channelMap":["MONO"], "mute":false, "channelVolumes":[1.000000]}
-Output/Audio:application.name:virt-manager={"channelMap":["FL", "FR"], "mute":false, "volume":1.000000, "channelVolumes":[1.000000, 1.000000]}
+Audio/Sink:node.name:auto_null={"mute":false, "volume":1.000000, "channelVolumes":[1.000000, 1.000000], "channelMap":["FL", "FR"]}
+Audio/Source:media.name:NoiseTorch\sMicrophone\sfor\sHDA\sNVidia\sSource\soutput={"channelMap":["MONO"], "channelVolumes":[1.000000], "volume":1.000000, "mute":false}
+Audio/Source:media.name:NoiseTorch\sMicrophone\sfor\sPoly\sBlackwire\s3320\sSeries\sSource\soutput={"mute":false, "channelVolumes":[1.000000], "channelMap":["MONO"], "volume":1.000000}
+Audio/Source:media.name:NoiseTorch\sMicrophone\sfor\sUSB\sAdvanced\sAudio\sDevice\sSource\soutput={"mute":false, "volume":1.000000, "channelVolumes":[1.000000], "channelMap":["MONO"]}
+Input/Audio:application.id:org.PulseAudio.pavucontrol={"mute":false, "channelVolumes":[1.000000], "channelMap":["MONO"], "volume":1.000000}
+Input/Audio:application.name:Chromium\sinput={"mute":false, "channelMap":["FL", "FR"], "channelVolumes":[1.000000, 1.000000], "volume":1.000000}
+Input/Audio:application.name:Firefox={"volume":1.000000, "mute":false, "channelVolumes":[1.000000], "channelMap":["MONO"]}
+Input/Audio:application.name:Google\sChrome\sinput={"volume":1.000000, "channelVolumes":[1.000000, 1.000000], "mute":false, "channelMap":["FL", "FR"]}
+Input/Audio:application.name:WEBRTC\sVoiceEngine={"volume":1.000000, "channelVolumes":[1.000000], "mute":false, "channelMap":["MONO"]}
+Input/Audio:application.name:ZOOM\sVoiceEngine={"volume":1.000000, "mute":false, "channelVolumes":[1.000000], "channelMap":["MONO"]}
+Input/Audio:media.name:NoiseTorch\sMicrophone\sfor\sHDA\sNVidia\sSource\sinput={"channelMap":["MONO"], "channelVolumes":[1.000000]}
+Input/Audio:media.name:NoiseTorch\sMicrophone\sfor\sPoly\sBlackwire\s3320\sSeries\sSource\sinput={"channelMap":["MONO"], "channelVolumes":[1.000000]}
+Input/Audio:media.name:NoiseTorch\sMicrophone\sfor\sUSB\sAdvanced\sAudio\sDevice\sSource\sinput={"channelVolumes":[1.000000], "channelMap":["MONO"]}
+Output/Audio:application.name:Chromium={"mute":false, "volume":1.000000, "channelVolumes":[1.000000, 1.000000], "channelMap":["FL", "FR"]}
+Output/Audio:application.name:Firefox={"mute":false, "channelMap":["FL", "FR"], "channelVolumes":[1.000000, 1.000000], "volume":1.000000, "target":"alsa_output.pci-0000_01_00.1.hdmi-stereo"}
+Output/Audio:application.name:Google\sChrome={"mute":false, "channelMap":["FL", "FR"], "target":"alsa_output.usb-C-Media_Electronics_Inc._USB_Advanced_Audio_Device-00.analog-stereo", "volume":1.000000, "channelVolumes":[1.000000, 1.000000]}
+Output/Audio:application.name:ZOOM\sVoiceEngine={"volume":1.000000, "channelVolumes":[1.000000, 1.000000], "channelMap":["FL", "FR"], "mute":false}
+Output/Audio:application.name:ZapZap={"mute":false, "volume":1.000000, "channelVolumes":[1.000000, 1.000000], "channelMap":["FL", "FR"]}
+Output/Audio:application.name:virt-manager={"mute":false, "volume":1.000000, "channelVolumes":[0.772732, 0.772732], "channelMap":["FL", "FR"]}
+Output/Audio:media.role:Movie={"mute":false, "channelMap":["FL", "FR", "FC", "LFE", "RL", "RR"], "target":"bluez_output.25_D1_EB_01_84_9D.1", "channelVolumes":[1.000000, 1.000000, 1.000000, 1.000000, 1.000000, 1.000000], "volume":1.000000}
+Output/Audio:media.role:Music={"mute":false, "channelMap":["FL", "FR"], "channelVolumes":[1.000000, 1.000000], "volume":1.000000, "target":"alsa_output.pci-0000_01_00.1.hdmi-stereo"}

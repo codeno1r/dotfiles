@@ -23,10 +23,10 @@
     "modules-right": [
       "pulseaudio",
       "cpu",
-      "temperature",
       "memory",
       "battery",
       "tray"
+      // "temperature",
       // "network",
       // "custom/power"
     ],

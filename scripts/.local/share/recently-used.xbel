@@ -13,4 +13,56 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///tmp/demon.png" added="2025-07-03T06:17:40.722275Z" modified="2025-07-03T06:32:29.332109Z" visited="2025-07-03T06:17:40.722276Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="ksnip" exec="&apos;ksnip %u&apos;" modified="2025-07-03T06:17:40.722279Z" count="1"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-03T06:32:29.332099Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/codenoir/Pictures/magikarp.jpg" added="2025-07-03T17:03:56.409609Z" modified="2025-07-03T17:04:07.533642Z" visited="2025-07-03T17:03:56.409611Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-03T17:03:56.837798Z" count="2"/>
+          <bookmark:application name="roam" exec="&apos;roam %u&apos;" modified="2025-07-03T17:04:07.533639Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/codenoir/Pictures/jislord.jpg" added="2025-07-06T00:15:13.524027Z" modified="2025-07-06T00:15:13.969025Z" visited="2025-07-06T00:15:13.524029Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-06T00:15:13.969018Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/codenoir/Downloads/16845438_keru_91cm_210617.jpg" added="2025-07-09T06:30:15.168969Z" modified="2025-07-09T06:30:15.168978Z" visited="2025-07-09T06:30:15.168971Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-09T06:30:15.168973Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/codenoir/dotfiles/dwm/.config/dwm/dwm-pertag-20200914-61bb8b2.diff" added="2025-07-09T09:59:26.387613Z" modified="2025-07-09T09:59:26.686762Z" visited="2025-07-09T09:59:26.387615Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-patch"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-09T09:59:26.686759Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>
