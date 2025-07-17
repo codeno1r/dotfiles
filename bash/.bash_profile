@@ -2,10 +2,12 @@
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export QT_QPA_PLATFORMTHEME=qt5ct
-export QT_QPA_PLATFORMTHEME=qt6ct
+# export QT_QPA_PLATFORMTHEME=qt6ct
 export PATH=$HOME/.local/bin:$PATH
 export PATH="$HOME/depot_tools:$PATH"
 export PATH=/opt/WebWork\ Tracker:$PATH
+export XDG_CURRENT_DESKTOP=XFCE
+export XDG_SESSION_DESKTOP=xfce
 # export GDK_BACKEND=x11
 
 startx

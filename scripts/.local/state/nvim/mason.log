@@ -28,3 +28,28 @@
 [INFO  Sun 29 Jun 2025 09:44:31 AM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=bash-language-server)
 [INFO  Sun 29 Jun 2025 09:44:32 AM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=pyright)
 [INFO  Sun 29 Jun 2025 09:44:32 AM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=ruff)
+[INFO  Wed 09 Jul 2025 10:13:30 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=pyright) Package(name=pyright)
+[INFO  Wed 09 Jul 2025 10:13:30 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=ruff) Package(name=ruff)
+[INFO  Wed 09 Jul 2025 10:13:30 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=shfmt) Package(name=shfmt)
+[INFO  Wed 09 Jul 2025 10:13:30 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=tailwindcss-language-server) Package(name=tailwindcss-language-server)
+[INFO  Wed 09 Jul 2025 10:13:32 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=shfmt)
+[INFO  Wed 09 Jul 2025 10:13:33 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=tailwindcss-language-server)
+[INFO  Wed 09 Jul 2025 10:13:35 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=pyright)
+[INFO  Wed 09 Jul 2025 10:13:35 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=ruff)
+[INFO  Wed 09 Jul 2025 10:13:52 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=prisma-language-server) {}
+[INFO  Wed 09 Jul 2025 10:13:56 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=prisma-language-server)
+[INFO  Sat 12 Jul 2025 11:33:45 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=clang-format) {}
+[ERROR Sat 12 Jul 2025 11:33:46 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/providers/init.lua:81: Provider "pypi" "get_supported_python_versions" failed: "Package does not specify supported Python versions."
+[ERROR Sat 12 Jul 2025 11:33:46 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/providers/init.lua:81: Provider "pypi" "get_supported_python_versions" failed: "Package does not specify supported Python versions."
+[ERROR Sat 12 Jul 2025 11:33:46 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/providers/init.lua:92: No provider implementation succeeded for pypi.get_supported_python_versions
+[INFO  Sat 12 Jul 2025 11:33:49 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=clang-format)
+[INFO  Sat 12 Jul 2025 11:34:00 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=ast-grep) {}
+[INFO  Sat 12 Jul 2025 11:34:04 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=ast-grep)
+[INFO  Sat 12 Jul 2025 11:34:08 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=cpplint) {}
+[INFO  Sat 12 Jul 2025 11:34:10 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=cpptools) {}
+[INFO  Sat 12 Jul 2025 11:34:12 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=cpplint)
+[INFO  Sat 12 Jul 2025 11:34:15 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=cpptools)
+[INFO  Sat 12 Jul 2025 11:34:20 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=ruff) Package(name=ruff)
+[INFO  Sat 12 Jul 2025 11:34:20 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:184: Executing installer for Package(name=tailwindcss-language-server) Package(name=tailwindcss-language-server)
+[INFO  Sat 12 Jul 2025 11:34:22 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=tailwindcss-language-server)
+[INFO  Sat 12 Jul 2025 11:34:23 PM PST] ...e/nvim/lazy/mason.nvim/lua/mason-core/installer/init.lua:245: Installation succeeded for Package(name=ruff)

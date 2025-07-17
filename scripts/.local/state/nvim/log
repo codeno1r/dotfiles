@@ -4,3 +4,54 @@ ERR 2025-07-09T16:29:01.638 ui.8095    tui_stop:618: TUI already stopped (race?)
 ERR 2025-07-09T16:35:16.154 ui.12428   tui_stop:618: TUI already stopped (race?)
 ERR 2025-07-09T17:01:18.077 ui.40408   tui_stop:618: TUI already stopped (race?)
 ERR 2025-07-09T18:11:40.107 ui.83936   tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-10T01:41:30.960 ui.4202    tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-10T02:52:45.047 ui.199552  tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-10T19:08:15.031 ui.1332    tui_stop:618: TUI already stopped (race?)
+ERR 2025-07-15T20:44:52.997 nvim.794468.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-07-15T20:44:53.869 nvim.794468.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-07-15T20:47:12.450 nvim.794468.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-07-15T21:01:07.266 nvim.794468.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-07-15T21:01:09.044 nvim.794468.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>
+ERR 2025-07-16T12:01:20.928 nvim.37215.0 decor_provider_error:36: Error in decoration provider "line" (ns=nvim.treesitter.highlighter):
+Error executing lua: /usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: Invalid 'end_col': out of range
+stack traceback:
+	[C]: in function 'nvim_buf_set_extmark'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:370: in function 'fn'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:232: in function 'for_each_highlight_state'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:322: in function 'on_line_impl'
+	/usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:411: in function </usr/share/nvim/runtime/lua/vim/treesitter/highlighter.lua:405>

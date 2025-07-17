@@ -65,4 +65,85 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/codenoir/Downloads/Profiles(1).xlsx" added="2025-07-09T16:03:35.156069Z" modified="2025-07-09T16:03:35.156074Z" visited="2025-07-09T16:03:35.156070Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-09T16:03:35.156071Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/codenoir/Downloads/Profiles.xlsx" added="2025-07-09T16:07:33.319611Z" modified="2025-07-09T16:33:00.242658Z" visited="2025-07-09T16:07:33.319613Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;thunar %u&apos;" modified="2025-07-09T16:07:33.319616Z" count="1"/>
+          <bookmark:application name="LibreOffice 24.8" exec="&apos;soffice %u&apos;" modified="2025-07-09T16:33:00.242657Z" count="8"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/codenoir/Downloads/29192.txt" added="2025-07-10T16:34:32.699472Z" modified="2025-07-10T16:34:32.699478Z" visited="2025-07-10T16:34:32.699473Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-zerosize"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-10T16:34:32.699475Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/codenoir/Downloads/29192(1).txt" added="2025-07-10T16:34:49.466237Z" modified="2025-07-10T16:34:49.466243Z" visited="2025-07-10T16:34:49.466238Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-10T16:34:49.466240Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/codenoir/Downloads/29182.txt" added="2025-07-10T17:02:05.435800Z" modified="2025-07-10T17:02:05.435818Z" visited="2025-07-10T17:02:05.435801Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-10T17:02:05.435804Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/codenoir/Downloads/29220.txt" added="2025-07-10T19:23:35.275177Z" modified="2025-07-10T19:23:35.275184Z" visited="2025-07-10T19:23:35.275178Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2025-07-10T19:23:35.275180Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/codenoir/Downloads/subnets_export.xlsx" added="2025-07-10T22:35:00.803513Z" modified="2025-07-10T22:35:01.699326Z" visited="2025-07-10T22:35:00.803513Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 24.8" exec="&apos;soffice %u&apos;" modified="2025-07-10T22:35:01.699325Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/codenoir/Downloads/subnets_export%20(1).xlsx" added="2025-07-10T22:36:42.711955Z" modified="2025-07-10T22:36:43.531160Z" visited="2025-07-10T22:36:42.711955Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 24.8" exec="&apos;soffice %u&apos;" modified="2025-07-10T22:36:43.531158Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>
